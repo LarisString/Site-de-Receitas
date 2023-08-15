@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livro de Receitas</title>
+</head>
+<body>
+    <h1>Inserir Receita</h1>
+
+    <form method="POST" action="processa.html">
+        <div id="formulario">
+            <div class="form-receita"></div>
+                <label>Nome da Receita: </label>
+                <input type="text" name="Nome da Receita[]" id="nome"><br />
+
+                <label>Ingredientes: </label>
+                <input type="text" name="Ingredientes[]" id="Ingredientes">
+                <button type="submit" onclick="adicionarCampo()"> + </button><br />
+
+                <label>Modo de Preparo: </label>
+                <input type="text" name="Modo de Preparo[]" id="Preparo"><br />
+
+        </div>
+
+        <div class="form-receita">
+            <input type="submit" value="Enviar" name="SendRecipe"/>
+        </div>
+
+    </form>
+    
+    
+    <script src="./script.js"></script>
+
+</body>
+</html>
