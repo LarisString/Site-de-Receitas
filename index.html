@@ -8,15 +8,17 @@
 <body>
     <h1>Inserir Receita</h1>
 
-    <form method="POST" action="processa.html">
+    <form method="POST" action="processa.php">
         <div id="formulario">
-            <div class="form-receita"></div>
+            <div class="form-receita">
                 <label>Nome da Receita: </label>
                 <input type="text" name="Nome da Receita[]" id="nome"><br />
 
-                <label>Ingredientes: </label>
-                <input type="text" name="Ingredientes[]" id="Ingredientes">
-                <button type="submit" onclick="adicionarCampo()"> + </button><br />
+                <div id="Ingredientes">
+                    <label>Ingredientes: </label>
+                    <input type="text" name="Ingredientes[]" id="Ingredientes">
+                    <button type="submit" onclick="adicionarCampo()"> + </button><br />
+                </div>
 
                 <label>Modo de Preparo: </label>
                 <input type="text" name="Modo de Preparo[]" id="Preparo"><br />
