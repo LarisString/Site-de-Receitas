@@ -8,16 +8,16 @@
 <body>
     <h1>Inserir Receita</h1>
 
-    <form method="post" action="processa.html">
+    <section>
         <div id="formulario">
             <div class="form-receita">
                 <label>Nome da Receita: </label>
                 <input type="text" name="Nome da Receita[]" id="nome" /><br><br>
 
                 <div id="Ingredientes">
-                    <label>Ingredientes: </label>
-                    <input type="text" name="Ingredientes[]" id="Ingredientes">
-                    <button type="submit" onclick="adicionarCampo()"> + </button><br><br>
+                    <label>Ingrediente: </label>
+                    <input type="text" name="Ingrediente[]" id="Ingrediente">
+                    <button onclick="adicionarCampo()"> + </button><br><br>
                  </div>
 
                 <label>Modo de Preparo: </label>
@@ -25,7 +25,8 @@
 
         </div>
     
-    
+    </section>
+    <button type="submit"> Enviar receita </button><br><br>
     <script src="./script.js"></script>
 
 </body>
