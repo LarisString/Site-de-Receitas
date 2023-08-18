@@ -11,27 +11,27 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Envie aqui sua receita </h1>
+    <h1>Envie aqui sua receita</h1>
 
     <section>
-        <div id="formulario">
-            <div class="form-receita">
-                <label>Nome da Receita: </label>
+        <div id="formulario" class="form-receita">
+            
+                <label id="Nome">Nome da Receita: </label><br>
                 <input type="text" name="Nome da Receita[]" id="nome" /><br><br>
 
                 <div id="Ingredientes">
-                    <label>Ingrediente: </label>
-                    <input type="text" name="Ingrediente[]" id="Ingrediente">
+                    <label>Ingrediente: </label><br>
+                    <input type="text" name="Ingrediente[]" id="Ingrediente" >
                     <button onclick="adicionarCampo()"> + </button><br><br>
                 </div>
 
                 
-                Modo de Preparo <textarea cols="20" rows="5"></textarea> <br/><br><br>
+                Modo de Preparo: <br><textarea cols="70" rows="5"></textarea> <br/><br><br><br>
+                <button type="submit"> Enviar receita </button>
 
         </div>
     
     </section>
-    <button type="submit"> Enviar receita </button><br><br>
     <script src="./script.js"></script>
 
 </body>
