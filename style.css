@@ -15,8 +15,8 @@ body {
 
 body h1 {
 
-    display: flex;
-    align-items: center;
+    display: block;
+    text-align: center;
     justify-content: center;
     font-size: 28px;
     margin: 20px auto 10px;
@@ -55,13 +55,13 @@ input #nome {
 }
 
 #add{
-    width: 20px;
+    width: 50px;
     margin-left: 6px;
 }
 
 #Ingredientes
 {
     border: 1px red solid;
-    
+ 
 
 }
