@@ -11,9 +11,27 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Envie aqui sua receita</h1>
+
+    
+    <nav>
+        <ul class="topnav"> <!-- Defina uma classe a Ul -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Receitas</a></li>
+            <li><a href="#">Adicione sua receita</a></li>
+            <li class="icon"><!--Inclui o ícone do responsivo na lista-->
+                <a href="javascript:void(0);" onclick="myFunction()">&#9776;
+</a><!--Chama a função javascript no evento click do icon-->
+            </li>
+        </ul>
+    </nav>
+
+<div class="form">
+    
 
     <section>
+
+    <h1>Envie aqui sua receita</h1>
+    
         <div id="formulario" class="form-receita">
                 <div id="nome">
                     <label id="Nome">Nome da Receita: </label><br>
@@ -31,6 +49,7 @@
         </div>
     
     </section>
+</div>
     <script src="./script.js"></script>
 
 </body>
